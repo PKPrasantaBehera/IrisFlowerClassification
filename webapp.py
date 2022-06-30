@@ -27,7 +27,7 @@ st.subheader('User Input parameters')
 st.write(df)
 
 
-model_in = open("E:/IrisFlowerClassification Project/exported-model.joblib","rb")
+model_in = open("exported-model.joblib","rb")
 classifier = joblib.load(model_in)
 
 prediction = classifier.predict(df)
